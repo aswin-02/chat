@@ -1,0 +1,91 @@
+body {
+  background-color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+  line-height: 500%;
+}
+.chat {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(39, 39, 39),
+    rgb(49, 40, 0)
+  );
+  margin-top: 80px;
+  margin-left: 180px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 1000px;
+  box-shadow: 5px 5px 10px rgb(117, 96, 1);
+}
+.flex {
+  height: 500px;
+  display: flex;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.flex::-webkit-scrollbar {
+  display: none;
+}
+p {
+  font-size: large;
+  padding: -20px;
+  color: white;
+}
+.up-list p {
+  color: rgb(226, 186, 8);
+}
+.flex li {
+  width: 430px;
+}
+.flex:focus {
+  scroll-padding-top: 20px;
+}
+.up-list {
+  float: left;
+}
+.down-list {
+  float: right;
+  text-align: right;
+  margin-top: 50px;
+}
+
+input {
+  font-size: 15px;
+  margin-left: 180px;
+  border: none;
+  border-bottom-left-radius: 30px;
+  width: 800px;
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 25px;
+  color: white;
+  background-color: rgb(39, 39, 39);
+  box-shadow: 5px 5px 10px rgb(117, 96, 1);
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(15, 14, 14);
+  border: none;
+  border-bottom-right-radius: 30px;
+  box-shadow: 5px 5px 10px rgb(117, 96, 1);
+  height: 62px;
+  width: 145px;
+}
+
+
+@media only screen and (max-width:600px){
+    .chat{
+        width: 270px;
+        margin-left: 20px;
+    }
+} 
